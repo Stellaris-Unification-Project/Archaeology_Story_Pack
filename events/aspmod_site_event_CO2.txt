@@ -157,10 +157,7 @@ fleet_event = {
 		name = asp.33.1
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_materialist
-					has_ethic = ethic_fanatic_materialist
-				}
+				is_materialist = yes
 			}
 		}
 		owner = {
@@ -195,10 +192,8 @@ fleet_event = {
 		trigger = {
 			owner = {
 				OR = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-					has_ethic = ethic_spiritualist
-					has_ethic = ethic_fanatic_spiritualist
+					is_xenophobe = yes
+					is_spiritualist = yes
 				}
 			}
 		}
@@ -229,10 +224,8 @@ fleet_event = {
 		trigger = {
 			owner = {
 				OR = {
-					has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
-					has_ethic = ethic_spiritualist
-					has_ethic = ethic_fanatic_spiritualist
+					is_xenophile = yes
+					is_spiritualist = yes
 				}
 			}
 		}
@@ -270,8 +263,7 @@ fleet_event = {
 		trigger = {
 			owner = {
 				OR = {
-					has_ethic = ethic_spiritualist
-					has_ethic = ethic_fanatic_spiritualist
+					is_spiritualist = yes
 				}
 			}
 		}
@@ -301,10 +293,7 @@ fleet_event = {
 		name = asp.33.5
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_pacifist
-					has_ethic = ethic_fanatic_pacifist
-				}
+				is_pacifist = yes
 			}
 		}
 		owner = { add_modifier = { modifier = aspmod_raining_modesty days = -1 } }
@@ -333,10 +322,7 @@ fleet_event = {
 		name = asp.33.6
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
-				}
+				is_militarist = yes
 			}
 		}
 		from.planet = {
@@ -367,18 +353,12 @@ fleet_event = {
 		trigger = {
 			owner = {
 				NOR = {
-					has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
-					has_ethic = ethic_pacifist
-					has_ethic = ethic_fanatic_pacifist
-					has_ethic = ethic_spiritualist
-					has_ethic = ethic_fanatic_spiritualist
-					has_ethic = ethic_materialist
-					has_ethic = ethic_fanatic_materialist
-					has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
+					is_militarist = yes
+					is_pacifist = yes
+					is_spiritualist = yes
+					is_materialist = yes
+					is_xenophile = yes
+					is_xenophobe = yes
 				}
 			}
 		}

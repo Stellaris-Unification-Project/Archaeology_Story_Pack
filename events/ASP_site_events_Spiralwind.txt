@@ -52,10 +52,7 @@ fleet_event = {
 		name = DIG
 		trigger = {
 			owner = {
-				NOR = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-				}
+				is_xenophobe = no
 			}
 		}
 		small_artifact_reward = yes
@@ -64,10 +61,7 @@ fleet_event = {
 		name = "ASPmod.41.option"
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-				}
+				is_xenophobe = yes
 			}
 		}
 		small_artifact_reward = yes
@@ -98,10 +92,7 @@ fleet_event = {
 		name = "ASPmod.42.option.a"
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-				}
+				is_xenophobe = yes
 			}
 		}
 		small_artifact_reward = yes
@@ -113,10 +104,7 @@ fleet_event = {
 		name = "ASPmod.42.option.b"
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
-				}
+				is_xenophile = yes
 			}
 		}
 		small_artifact_reward = yes
@@ -128,10 +116,7 @@ fleet_event = {
 		name = "ASPmod.42.option.c"
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_authoritarian
-					has_ethic = ethic_fanatic_authoritarian
-				}
+				is_authoritarian = yes
 			}
 		}
 		small_artifact_reward = yes
@@ -195,10 +180,7 @@ fleet_event = {
 		name = "ASPmod.44.option.a"
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-				}
+				is_xenophobe = yes
 			}
 		}
 		small_artifact_reward = yes
@@ -225,10 +207,7 @@ fleet_event = {
 		name = "ASPmod.44.option.b"
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-				}
+				is_xenophobe = yes
 			}
 		}
 		allow = {
@@ -257,10 +236,7 @@ fleet_event = {
 		name = "ASPmod.44.option.c"
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
-				}
+				is_xenophile = yes
 			}
 		}
 		small_artifact_reward = yes
@@ -323,8 +299,7 @@ fleet_event = {
 		trigger = {
 			owner = {	
 				NOR = {
-					has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
+					is_xenophile = yes
 					has_ethic = ethic_gestalt_consciousness
 				}
 			}

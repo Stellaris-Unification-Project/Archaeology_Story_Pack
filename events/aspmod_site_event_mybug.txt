@@ -133,10 +133,7 @@ fleet_event = {
 		custom_tooltip = asp.74.a.tooltip
 		trigger = {
 			owner = {
-				OR = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-				}
+				is_xenophobe = yes
 			}
 		}
 		if = {
@@ -173,8 +170,7 @@ fleet_event = {
 		trigger = {
 			owner = {
 				NOR = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
+					is_xenophobe = yes
 					has_ethic = ethic_gestalt_consciousness
 				}
 			}
@@ -236,7 +232,7 @@ ship_event = {
 					}
 				}
 				while = {
-					create_pop = { species = last_created }
+					create_pop = { species = last_created_species }
 					count = 7
 				}
 				if = {
@@ -315,7 +311,7 @@ ship_event = {
 					}
 				}
 				while = {
-					create_pop = { species = last_created }
+					create_pop = { species = last_created_species }
 					count = 7
 				}
 				if = {

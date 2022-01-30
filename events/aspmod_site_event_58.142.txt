@@ -265,7 +265,7 @@ country_event = {
 					save_global_event_target_as = asp_kessler_syndrome_country
 					establish_communications_no_message = root
 					##Copy technology
-					random_country = {
+					random_playable_country = {
 						limit = { is_ai = no }
 						save_event_target_as = tech_country
 					}
@@ -406,10 +406,8 @@ country_event = {
 							any_ship_in_system = {
 								is_ship_class = shipclass_starbase
 								owner = {
-									OR = {
-										is_country_type = fallen_empire
-										is_country_type = awakened_fallen_empire
-									}
+									
+										is_fallen_empire = yes
 								}
 							}
 						}
